@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel=”icon” type=”image/png” href=”image/favicon.png”>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700;900&display=swap" rel="stylesheet" />
+        <title>1 Week</title>
+        <link rel="stylesheet" href="/dist/output.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <style>
+            * {
+                scroll-behavior: smooth;
+            }
+            .bg-about {
+                background-image: url(/img/bg.jpg);
+                background-size: 100%;
+            }
+
+            .vertical-text {
+                writing-mode: vertical-rl;
+                text-orientation: mixed;
+            }
+
+            .spacing {
+                letter-spacing: 16px;
+            }
+
+            .hide-scroll::-webkit-scrollbar {
+                display: none;
+            }
+            .poppins {
+                font-family: "Poppins", sans-serif;
+            }
+        </style>
+    </head>
+
+    <body class="hide-scroll poppins">
+
+        <nav id="navbar" class="bg-transparent w-full mt-8 md:mt-0 fixed z-30 top-0 shadow-xl dark:bg-gray-800 flex" data-aos="fade-in" data-aos-duration="1000">
+            <div class="container items-center my-auto z-10">
+                <h2 class="pl-6 sm:pl-16 text-xl md:text-xl font-bold text-blue-400">WebGen ID</h2>
+            </div>
+
+            <div>
+                <button onclick="navbar()" class="-mt-2 mr-8 relative sm:hidden">
+                    <div id="btn" class="items-center my-auto">
+                        <div id="nav1" class="w-8 h-1 bg-white rounded-full mb-1 transition-opacity"></div>
+                        <div class="w-8 h-1 bg-white rounded-full mb-1"></div>
+                        <div id="nav2" class="w-8 h-1 bg-white rounded-full transition-opacity"></div>
+                    </div>
+                    <div id="menu" class="text-slate-300 capitalize rounded-2xl p-4 text-right absolute z-40 max-w-md -ml-12 hidden" style="opacity: 1">
+                        <div class="mb-2">
+                            <a>home</a>
+                        </div>
+                        <hr />
+                        <div class="mb-2">
+                            <a>about</a>
+                        </div>
+                        <hr />
+                        <div class="mb-2">
+                            <a>contact</a>
+                        </div>
+                    </div>
+                </button>
+
+                <div class="container hidden sm:flex items-center justify-center p-6 mx-auto text-slate-400 capitalize dark:text-gray-300">
+                    <a href="#" class="text-slate-300 dark:text-gray-200 border-b-2 border-blue-500 mx-1.5 sm:mx-6">home</a>
+                    <a href="#about" class="border-b-2 border-transparent hover:text-slate-300 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">about</a>
+                    <a href="#contact" class="border-b-2 border-transparent hover:text-slate-300 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">contact</a>
+                    <a href="" class="text-slate-800 text-center font-semibold px-8 py-2 rounded-full bg-blue-500 w-44">Get Started</a>
+                </div>
+            </div>
+        </nav>
+
+        <section id="home" class="bg-[#191a1c] pb-8 lg:pb-14 flex flex-wrap pt-24" data-aos="fade-in" data-aos-offset="0" data-aos-easing="linear">
+            <div class="container w-full sm:w-1/2 mb-4" data-aos="flip-up" data-aos-duration="2000">
+                <img class="w-10/12 sm:w-full mx-auto" src="/img/portfolio.svg" alt="My Portfolio" />
+            </div>
+
+            <div class="container w-full my-auto md:mt-12 lg:mt-24 sm:w-1/2 lg:pr-36 lg:-left-8 px-8 text-center capitalize" data-aos="fade-left">
+                <h2 class="text-white font-medium lg:text-2xl md:mb-0">hello ✌ welcome to</h2>
+
+                <h1 class="text-[#fff852] text-4xl lg:text-6xl font-extrabold mb-2 lg:mb-6">WebGen ID</h1>
+
+                <p class="text-white text-sm md:text-xs lg:text-base mb-4 lg:mb-8">
+                    "Passionate web developer dedicated to transforming ideas into functional, visually appealing websites. With a strong foundation in coding and a flair for creativity, I craft digital experiences that resonate with
+                    users."
+                </p>
+
+                <button
+                    type="button"
+                    class="text-white bg-yellow-400 hover:bg-yellow-300 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm py-2 px-8 lg:w-32 lg:h-10 mx-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                >
+                    More
+                </button>
+                <button
+                    type="button"
+                    class="text-white bg-gradient-to-r from-blue-500 to-red-400 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm py-2 px-6 lg:w-32 lg:h-10 mx-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                >
+                    Explore
+                </button>
+            </div>
+        </section>
+
+        <section id="slank" class="grid grid-cols-1 bg-[#fff852] pt-8 px-8 pb-4 md:px-16 lg:px-28">
+            <div class="pt-4">
+                <h1 class="text-2xl md:text-[43px] md:mb-4 lg:text-7xl font-extrabold">LETS BUILD YOUR WEBSITE</h1>
+                <h1 class="text-4xl md:text-7xl lg:text-9xl font-extrabold">NOW !</h1>
+            </div>
+            <div class="w-full -mt-8 md:-mt-14 lg:-mt-28">
+                <img class="w-1/2 md:w-1/2 ml-36 md:ml-[19rem] md:-mt-8 lg:ml-[500px]" src="/img/web mockup.svg" alt="" />
+            </div>
+            <div class="-mt-10 md:-mt-24 lg:-mt-36">
+                <button class="text-xs lg:text-lg font-bold py-2 md:py-4 w-24 md:w-40 lg:w-56 lg:py-4 rounded-full bg-sky-500 hover:bg-blue-400 hover:text-xl">STARTED</button>
+            </div>
+        </section>
+
+        <section id="about" class="bg-white w-full pt-4 overflow-hidden md:h-[530px] lg:h-[730px]">
+            <div class="text-center mb-4 md:mb-6 lg:mb-8">
+                <h1 class="bg-about text-8xl lg:text-[200px] bg-clip-text text-transparent font-extrabold">ABOUT</h1>
+            </div>
+            <section class="container text-center bg-white gap-4 md:gap-8 lg:gap-12 px-8 mx-auto grid grid-cols-1 md:grid-cols-2">
+                <div style="z-index: 3">
+                    <h2 class="capitalize font-semibold text-lg md:text-xl">profile</h2>
+                    <div class="w-72 h-[2px] bg-slate-700 rounded mx-auto"></div>
+                    <p class="mt-2 text-xs lg:text-sm font-medium">
+                        I'm a high school graduate with a strong commitment to self-improvement through diverse courses and experiences. I value lifelong learning, embracing challenges, and seizing opportunities to broaden my knowledge and
+                        skills. This versatile background equips me to adapt and contribute effectively in various contexts.
+                    </p>
+                </div>
+
+                <div style="z-index: 3">
+                    <h2 class="capitalize font-semibold text-lg md:text-xl">profile</h2>
+                    <div class="w-72 h-[2px] bg-slate-700 rounded mx-auto"></div>
+                    <p class="mt-2 text-xs lg:text-sm font-medium">
+                        I'm a high school graduate with a strong commitment to self-improvement through diverse courses and experiences. I value lifelong learning, embracing challenges, and seizing opportunities to broaden my knowledge and
+                        skills. This versatile background equips me to adapt and contribute effectively in various contexts.
+                    </p>
+                </div>
+
+                <div style="z-index: 1" class="-mt-60 -ml-16 md:-ml-36 w-40 h-40 md:w-64 md:h-64 bg-[#fff852] rounded-full opacity-40 blur-lg"></div>
+
+                <div style="z-index: 2" class="md:col-span-2 md:-mt-6">
+                    <h2 class="capitalize font-semibold text-lg md:text-xl">client</h2>
+                    <div class="w-72 md:w-96 h-[2px] bg-slate-700 rounded mx-auto"></div>
+                    <div class="grid grid-cols-3 md:grid-cols-6 gap-2 items-center mt-4">
+                        <div>
+                            <img class="mx-auto w-full" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Wings_%28Indonesian_company%29_logo.svg" alt="" />
+                        </div>
+                        <div>
+                            <img class="mx-auto w-[150%]" src="https://logowik.com/content/uploads/images/rans-cilegon-fc5662.logowik.com.webp" alt="" />
+                        </div>
+                        <div>
+                            <img class="mx-auto w-[60%]" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopee_logo.svg" alt="" />
+                        </div>
+                        <div>
+                            <img class="mx-auto w-[95%]" src="https://iconlogovector.com/uploads/images/2023/06/md-b936dd7cbc31b40c650ae13a4b50d83c51.jpg" alt="" />
+                        </div>
+                        <div>
+                            <img class="mx-auto w-full scale-110" src="https://upload.wikimedia.org/wikipedia/commons/5/59/Toko_Buku_Gramedia.svg" alt="" />
+                        </div>
+                        <div>
+                            <img class="mx-auto w-[80%]" src="https://seeklogo.com/images/T/tokopedia-logo-5340B636F6-seeklogo.com.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div style="z-index: 1" class="ml-56 md:ml-[570px] lg:ml-[1050px] -mt-32 lg:-mt-40 w-40 h-40 md:w-64 md:h-64 bg-[#fff852] rounded-full opacity-40 blur-lg"></div>
+            </section>
+        </section>
+
+        <section id="team" class="bg-[#191a1c]">
+            <div class="text-center w-full h-6 top-4 left-0 p-4 lg:p-8">
+                <h2 class="text-4xl lg:text-6xl text-[#fff856] font-extrabold">OUR TEAM</h2>
+            </div>
+            <div class="hide-scroll whitespace-nowrap overflow-x-auto snap-x overflow-y-hidden">
+                <div class="card ml-8">
+                    <div class="profile" style="background-image: url(/img/1.jpg); background-size: 100%"></div>
+                    <h2 class="card-h2">full name</h2>
+                    <p class="card-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus in earum eaque possimus necessitatibus? Fugiat eaque dolor eligendi, neque magni ex consequuntur.</p>
+                </div>
+                <div class="card">
+                    <div class="profile" style="background-image: url(/img/2.png); background-size: 100%"></div>
+                    <h2 class="card-h2">full name</h2>
+                    <p class="card-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus in earum eaque possimus necessitatibus? Fugiat eaque dolor eligendi, neque magni ex consequuntur.</p>
+                </div>
+                <div class="card">
+                    <div class="profile" style="background-image: url(/img/3.jpeg); background-size: 100%"></div>
+                    <h2 class="card-h2">full name</h2>
+                    <p class="card-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus in earum eaque possimus necessitatibus? Fugiat eaque dolor eligendi, neque magni ex consequuntur.</p>
+                </div>
+                <div class="card">
+                    <div class="profile" style="background-image: url(/img/4.jpeg); background-size: 100%"></div>
+                    <h2 class="card-h2">full name</h2>
+                    <p class="card-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus in earum eaque possimus necessitatibus? Fugiat eaque dolor eligendi, neque magni ex consequuntur.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="overflow-x-hidden overflow-y-hidden">
+            <div class="w-full grid grid-cols-1 md:flex h-full bg-[#fff856]">
+                <div class="text-2xl md:text-4xl lg:text-6xl align-middle px-8 md:py-8 lg:py-16 lg:pl-16 md:pr-0 pt-4">
+                    <h2 class="font-semibold md:whitespace-nowrap">Succeed Online for Less!</h2>
+                    <h2 class="font-semibold">Get Your Website</h2>
+                    <h2 class="font-semibold">Starting at Just</h2>
+                    <span class="text-4xl md:text-6xl lg:text-8xl lg:-ml-1 font-bold ml-2">$100</span>
+                </div>
+                <div class="w-full items-center flex">
+                    <img class="scale-125" src="/img/transaction.svg" alt="" />
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <form class="border border-blue-600 rounded-xl m-8 md:m-16">
+                <h2 class="text-center text-2xl md:text-4xl lg:text-6xl font-bold mt-4">Contact</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 md:gap-16 md:text-xl md:font-semibold gap-4 p-4 md:p-16">
+                    <div class="mb-4">
+                        <label for="">Full name</label>
+                        <input type="text" class="border-b-[1px] w-full border-slate-900" />
+                    </div>
+                    <div class="mb-4">
+                        <label for="">Email</label>
+                        <input type="email" class="border-b-[1px] w-full border-slate-900" />
+                    </div>
+                    <div class="mb-4">
+                        <label for="">Phone number</label>
+                        <input type="text" class="border-b-[1px] w-full border-slate-900" />
+                    </div>
+                    <div class="mb-4">
+                        <label for="">Region</label>
+                        <input type="text" class="border-b-[1px] w-full border-slate-900" />
+                    </div>
+                    <div class="mb-4 md:col-span-2">
+                        <label for="">Your Massage</label>
+                        <textarea name="" id="" cols="39" rows="4" class="border-b-[1px] w-full border-slate-900"></textarea>
+                    </div>
+                </div>
+                <button class="border-2 border-blue-600 py-1 md:py-2 bg-[#fff856] rounded-full mx-auto flex mb-8">
+                    <a class="text-center text-blue-800 text-xl font-semibold px-12 md:px-16">Submit</a>
+                </button>
+            </form>
+        </section>
+
+        <footer class="w-full h-72 bg-[#191a1c] text-white text-center p-4">
+            <h1 class="text-4xl font-bold">GET COOL SHIT</h1>
+            <p class="text-sm font-light">active, self help and top service and tools cool shit</p>
+            <form class="mt-10">
+                <div class="relative">
+                    <div class="">
+                        <input type="text" class="w-10/12 lg:w-6/12 md:h-12 rounded-full" />
+                    </div>
+                    <div class="inset-y-0 left-0 flex items-center pl-72 md:pl-[600px] lg:pl-[850px] pointer-events-none absolute">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                </div>
+            </form>
+            <div class="flex gap-10 mt-16 md:mt-8 justify-center">
+                <a class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)">
+                        <path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path>
+                        <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                        <path
+                            d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+                        ></path>
+                    </svg>
+                </a>
+
+                <a class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)">
+                        <path
+                            d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"
+                        ></path>
+                    </svg>
+                </a>
+
+                <a class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)">
+                        <path
+                            d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"
+                        ></path>
+                    </svg>
+                </a>
+
+                <a class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)">
+                        <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                        <path
+                            d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"
+                        ></path>
+                    </svg>
+                </a>
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
